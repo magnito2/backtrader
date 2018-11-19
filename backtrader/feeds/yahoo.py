@@ -78,6 +78,7 @@ class YahooFinanceCSVData(feed.CSVDataBase):
         swap the columns again arose.
 
     '''
+    lines = ('adjclose',) #bug fix
     params = (
         ('reverse', False),
         ('adjclose', True),
